@@ -1,0 +1,14 @@
+# Compiled sources #
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+
+# Text Backup Files #
+*.s[a-w][a-z]
+*~
+\#*\#
+.\#*
