@@ -24,8 +24,8 @@ public class MergeSortTester
 
     public static int[] makeArr(int num){
 	int[] retArr = new int[num];
-	for(int i = num; i > 0; i--){
-	    retArr[i - 1] = i;
+	for(int i = 0; i < num; i++){
+	    retArr[i] = (int)Math.random() * 10;
 	}
 	return retArr;
     }
@@ -41,7 +41,7 @@ public class MergeSortTester
 	int[] arr0 = makeArr(1);
 	int[] arr1 = makeArr(10);
 	int[] arr2 = makeArr(100);
-	int[] arr3 = makeArr(99999);
+	int[] arr3 = makeArr(1000); 
 	long before, after;
 	
        	System.out.println("\nSorting arr4-7...");
