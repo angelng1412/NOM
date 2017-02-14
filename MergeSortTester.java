@@ -1,3 +1,8 @@
+//Team NOM
+//
+//
+//
+
 /*======================================
   class MergeSortTester
 
@@ -44,29 +49,12 @@ public class MergeSortTester
 	int[] arr3 = makeArr(1000); 
 	long before, after;
 	
-       	System.out.println("\nSorting arr4-7...");
-
-	before = System.currentTimeMillis();
-	MergeSort.sort( arr0 );
-	after = System.currentTimeMillis();
-	System.out.println("Arr0: " + (after - before) + "\n");
-
-	before = System.currentTimeMillis();
-	MergeSort.sort( arr1 );
-	after = System.currentTimeMillis();
-	System.out.println("Arr1: " + (after - before) + "\n");
-
-	before = System.currentTimeMillis();
-	MergeSort.sort( arr2 );
-	after = System.currentTimeMillis();
-	System.out.println("Arr2: " + (after - before) + "\n");
-	
 	int counter = 0; 
-	while(counter < 100){
+	while(counter < 9){
 	    before = System.currentTimeMillis();
-	    MergeSort.sort( arr3 );
+	    MergeSort.sort(makeArr((int)Math.pow(10, counter)));
 	    after = System.currentTimeMillis();
-	    System.out.println("Arr3: " + (after - before) + "\n");
+	    System.out.println("Arr of length 10^" + counter + ": " + (after - before) + "\n");
 	    counter++;
 	}
 	
