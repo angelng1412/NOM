@@ -60,11 +60,15 @@ public class MergeSortTester
 	MergeSort.sort( arr2 );
 	after = System.currentTimeMillis();
 	System.out.println("Arr2: " + (after - before) + "\n");
-
-	before = System.currentTimeMillis();
-	MergeSort.sort( arr3 );
-	after = System.currentTimeMillis();
-	System.out.println("Arr3: " + (after - before) + "\n");
+	
+	int counter = 0; 
+	while(counter < 100){
+	    before = System.currentTimeMillis();
+	    MergeSort.sort( arr3 );
+	    after = System.currentTimeMillis();
+	    System.out.println("Arr3: " + (after - before) + "\n");
+	    counter++;
+	}
 	
     }//end main
 
