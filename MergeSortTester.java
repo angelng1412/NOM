@@ -5,7 +5,7 @@
   Given an array with n items, our algorithm first splits the array in halves until every halves reach a length of 1. Then, our algorithm will compare the two one-item "sorted" arrays and merge it, and recursively will merge every halves back together until it becomes a sorted array with n items again.
 
   BIG-OH CLASSIFICATION OF ALGORITHM:
-  <INSERT YOUR EXECUTION TIME CATEGORIZATION OF MERGESORT HERE>
+  When splitting the given array with n items, splitting it log base 2 of n will ensure 1 item arrays, and then with merge which will make a new array of the combined size of both arrays, lets say a and b, then the loop will run a+b times which is linear. Using both splitting with a runtime of log base 2 of n and merging with runtime of n will result in a total runtime of nlogn for MergeSort method.
 
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
