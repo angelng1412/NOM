@@ -2,7 +2,7 @@
   class MergeSortTester
 
   ALGORITHM:
-  <INSERT YOUR DISTILLATION OF ALGO HERE>
+  Given an array with n items, our algorithm first splits the array in halves until every halves reach a length of 1. Then, our algorithm will compare the two one-item "sorted" arrays and merge it, and recursively will merge every halves back together until it becomes a sorted array with n items again.
 
   BIG-OH CLASSIFICATION OF ALGORITHM:
   <INSERT YOUR EXECUTION TIME CATEGORIZATION OF MERGESORT HERE>
