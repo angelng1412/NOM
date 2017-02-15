@@ -25,7 +25,7 @@
 
   ANALYSIS:
   As a smaller array is sorted using mergesort, the runtime is relatively small. When the items in the array reach 10,000, the process starts to take up longer runtime and grows really quickly.
-  Our hypothesis for the runtime is nlogn, and based on the experiments conducted, the data shows that it is somewhere in between linear and _________ runtime, which proves our hypothesis (correct/wrong) that the runtime classification for mergesort is (indeed nlogn/__________).
+  Our hypothesis for the runtime is nlogn, and based on the experiments conducted, the data shows that it is somewhere in between linear and quadratic runtime, which proves our hypothesis correct that the runtime classification for mergesort is indeed nlogn.
   We also conclude that mergesort does not have a worst case scenario and a best case scenario, because it will always split the non-1-item arrays into 1-item arrays and then recursively merge them together, and the runtime depends only on the number of items in the given array.
   ======================================*/
 
@@ -42,9 +42,9 @@ public class MergeSortTester
     
     /******************************
      * execution time analysis 
-     * <INSERT YOUR DESCRIPTION HERE OF 
-     *  YOUR APPARATUS FOR GENERATING EXECUTION 
-     *  TIME DATA...>
+     * We have a while loop that accounts for 9 test cases, each one increases the n count by a factor of 10 
+     * Then, we calculated the time it takes for the n-item array to be completely sorted
+     * In order to do that, we set a before timer and after timer and subtracted after and before to get the runtime
      ******************************/
     public static void main( String[] args ) 
     {
