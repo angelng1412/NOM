@@ -13,15 +13,15 @@
   When splitting the given array with n items, splitting it log base 2 of n will ensure 1 item arrays, and then with merge which will make a new array of the combined size of both arrays, lets say a and b, then the loop will run a+b times which is linear. Using both splitting with a runtime of log base 2 of n and merging with runtime of n will result in a total runtime of nlogn for MergeSort method.
 
   Mean execution times for dataset of size n:
-  Batch size: <# of times each dataset size was run>
-  n=1       time: 1
-  n=10      time: 1
-  n=100     time: 1
+  Batch size: <10>
+  n=1       time: 0
+  n=10      time: 0
+  n=100     time: 0
   n=10^3    time: 1
-  n=10^4    time: 1
-  n=10^5    time: 172
-  n=10^6    time: 547
-  n=10^7    time: 3810
+  n=10^4    time: 7
+  n=10^5    time: 55
+  n=10^6    time: 359
+  n=10^7    time: 2178
 
   ANALYSIS:
   As a smaller array is sorted using mergesort, the runtime is relatively small. When the items in the array reach 10,000, the process starts to take up longer runtime and grows really quickly.
@@ -42,7 +42,7 @@ public class MergeSortTester
     
     /******************************
      * execution time analysis 
-     * We have a while loop that accounts for 9 test cases, each one increases the n count by a factor of 10 
+     * We have a while loop that accounts for 7 test cases, each one increases n (the number of elements in the array) by a factor of 10 
      * Then, we calculated the time it takes for the n-item array to be completely sorted
      * In order to do that, we set a before timer and after timer and subtracted after and before to get the runtime
      ******************************/
@@ -55,7 +55,7 @@ public class MergeSortTester
 	long before, after;
 	
 	int counter = 0; 
-	while(counter < 9){
+	while(counter <= 7){
 	    before = System.currentTimeMillis();
 	    MergeSort.sort(makeArr((int)Math.pow(10, counter)));
 	    after = System.currentTimeMillis();
