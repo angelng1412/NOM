@@ -21,7 +21,7 @@
   n=10^4    time: 1
   n=10^5    time: 172
   n=10^6    time: 547
-  n=<huge>  time: 3810
+  n=10^7    time: 3810
 
   ANALYSIS:
   As a smaller array is sorted using mergesort, the runtime is relatively small. When the items in the array reach 10,000, the process starts to take up longer runtime and grows really quickly.
